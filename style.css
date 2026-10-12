@@ -334,3 +334,37 @@ footer { border-top: 1px solid var(--border); padding: 3rem 0; font-size: 0.85re
 @media (max-width: 768px) {
   .contact-box { grid-template-columns: 1fr; }
 }
+
+/* Inline Icon Alignment */
+.btn-with-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icon-svg {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-icon-link:hover {
+  color: var(--accent);
+}
+
+.icon-svg-sm {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
