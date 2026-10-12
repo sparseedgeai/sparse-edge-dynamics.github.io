@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sparse-Edge Dynamics // Embedded R&amp;D</title>
+  <title>Sparse-Edge Dynamics // Embedded R&amp;D Lab</title>
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,10 +15,10 @@
       <img src="assets/logo.png" alt="Sparse-Edge Dynamics Logo" class="nav-logo">
       <nav class="nav-links">
         <a href="#about">The Lab</a>
-        <a href="#research">Publications</a>
-        <a href="#portfolio">Featured Systems</a>
-        <a href="#skills">Core Matrix</a>
-        <a href="#contact" class="btn-primary">Initiate Contact</a>
+        <a href="#research">Research &amp; Publications</a>
+        <a href="#portfolio">Systems Registry</a>
+        <a href="#skills">Tech Matrix</a>
+        <a href="#contact" class="btn-primary">Collaborate</a>
       </nav>
     </div>
   </header>
@@ -26,14 +26,14 @@
   <!-- HERO SECTION -->
   <section class="hero">
     <div class="container">
-      <div class="badge">EMBEDDED SYSTEMS &bull; COMPUTER VISION &amp; MLOps &bull; Osaka, JP</div>
+      <div class="badge">EMBEDDED SYSTEMS &bull; COMPUTER VISION &bull; LOW-LATENCY EDGE AI</div>
       <h1>Accelerating Neural Inference on Constraint-Bound Edge Hardware.</h1>
       <p class="hero-desc">
-        <strong>Sparse-Edge Dynamics</strong> is an applied research and embedded systems engineering laboratory. We architect, compress, and deploy high-throughput perception pipelines for edge GPUs, NPUs, and industrial microprocessors.
+        <strong>Sparse-Edge Dynamics</strong> is an applied research and embedded systems laboratory. We design, compress, and deploy high-throughput neural perception pipelines for edge GPUs, NPUs, and industrial microprocessors.
       </p>
       <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Connect for Projects</a>
-        <a href="#portfolio" class="btn-secondary">Explore System Registry</a>
+        <a href="#contact" class="btn-primary">Research Collaboration</a>
+        <a href="#portfolio" class="btn-secondary">Explore Systems Registry</a>
       </div>
     </div>
   </section>
@@ -65,7 +65,7 @@
       <h2 class="section-title">Peer-Reviewed Research &amp; Publications</h2>
       <div class="grid-2">
 
-        <!-- THESIS / HIGHPHYTOSPARSENET -->
+        <!-- PAPER 1: HIGHPHYTOSPARSENET -->
         <div class="card highlight-card">
           <div class="card-num">COMPUTER VISION &bull; EDGE AI RESEARCH</div>
           <h3>HighPhytoSparseNet: A Lightweight Multi-Head Object Detection Model for Edge-Based Agricultural Applications</h3>
@@ -85,7 +85,7 @@
           <a href="papers/HighPhytoSparseNet_A_Lightweight_Multi-Head_Object_Detection_Model_for_Edge-Based_Agricultural_Applications.pdf" target="_blank" class="text-link">Access Publication (PDF) &rarr;</a>
         </div>
 
-        <!-- ATAIT 2024 PAPER -->
+        <!-- PAPER 2: ATAIT 2024 / BMS -->
         <div class="card highlight-card">
           <div class="card-num">ATAIT 2024 &bull; CEUR VOL-3748 &bull; EMBEDDED SYSTEMS</div>
           <h3>Development of Battery Management System for Electric Vehicles</h3>
@@ -109,12 +109,12 @@
     </div>
   </section>
 
-  <!-- DETAILED PROJECT REGISTRY -->
+  <!-- DETAILED SYSTEMS REGISTRY -->
   <section id="portfolio" class="section bg-elevated">
     <div class="container">
-      <h2 class="section-title">Production Systems &amp; Technical Portfolio</h2>
+      <h2 class="section-title">Open-Source Systems &amp; Engineering Portfolio</h2>
       <p class="section-intro">
-        Each system demonstrates full-cycle ML engineering: from data preprocessing and mathematical architecture design to training, quantization, and containerized deployment.
+        Each system demonstrates full-cycle ML engineering: mathematical model design, quantization pipelines, and low-latency runtime bindings.
       </p>
 
       <div class="table-wrapper">
@@ -133,34 +133,34 @@
               <td><span class="status-tag active">PyTorch / Jetson</span></td>
             </tr>
             <tr>
-              <td><strong>Manufacturing Defect Detection</strong></td>
-              <td>Real-time industrial surface defect detection utilizing YOLOv8 + TensorRT on NVIDIA Jetson. Achieves 90% accuracy with sub-50 ms deterministic execution.</td>
+              <td><strong>Industrial Defect Detection</strong></td>
+              <td>Real-time surface defect detection utilizing YOLOv8 + TensorRT on NVIDIA Jetson. 90% accuracy with sub-50 ms deterministic execution.</td>
               <td><span class="status-tag active">TensorRT / Jetson</span></td>
             </tr>
             <tr>
               <td><strong>Multilingual Enterprise RAG Agent</strong></td>
-              <td>Document retrieval for English, Arabic, and German via RAG + FAISS + CLIP + HuggingFace Transformers + FastAPI. 85% accuracy with sub-3s response.</td>
+              <td>Document retrieval for English, Arabic, and German via RAG + FAISS + CLIP + Transformers + FastAPI. 85% accuracy with sub-3s response.</td>
               <td><span class="status-tag active">FastAPI / FAISS</span></td>
             </tr>
             <tr>
-              <td><strong>YoloMine Damage Detection</strong></td>
+              <td><strong>Damage Detection Architecture</strong></td>
               <td>Custom single-stage detector built from scratch in PyTorch. Incorporates a DarkNet-style backbone, FPN feature neck, and multi-scale prediction heads.</td>
               <td><span class="status-tag active">PyTorch / FPN</span></td>
             </tr>
             <tr>
-              <td><strong>Fraud Detection Classification Engine</strong></td>
-              <td>NLP text classification engine using CountVectorizer feature extraction paired with Multinomial Naive Bayes. 97% detection accuracy on phishing patterns.</td>
+              <td><strong>NLP Text Classification Engine</strong></td>
+              <td>Lightweight text classifier using CountVectorizer feature extraction paired with Multinomial Naive Bayes. 97% detection accuracy.</td>
               <td><span class="status-tag active">Scikit-Learn</span></td>
             </tr>
             <tr>
               <td><strong>LLM Fine-Tuning Pipeline</strong></td>
-              <td>Parameter-Efficient Fine-Tuning (PEFT/LoRA) on foundational LLMs (BERT, LLaMA). Evaluated via BLEU &amp; F1; served via Streamlit &amp; FastAPI endpoints.</td>
+              <td>Parameter-Efficient Fine-Tuning (PEFT/LoRA) on foundational open weights (BERT, LLaMA). Evaluated via BLEU &amp; F1; served via FastAPI endpoints.</td>
               <td><span class="status-tag pending">PEFT / FastAPI</span></td>
             </tr>
             <tr>
               <td><strong>Cloud ML Pipeline Architecture</strong></td>
-              <td>End-to-end continuous training and deployment pipelines wrapped in Docker, orchestrated via Kubernetes, and exposed through asynchronous FastAPI microservices.</td>
-              <td><span class="status-tag pending">AWS / Docker</span></td>
+              <td>End-to-end continuous training and deployment pipelines wrapped in Docker, orchestrated via Kubernetes, and exposed through asynchronous REST APIs.</td>
+              <td><span class="status-tag pending">Cloud / Docker</span></td>
             </tr>
           </tbody>
         </table>
@@ -168,7 +168,7 @@
     </div>
   </section>
 
-  <!-- SKILLS & EXPERTISE MATRIX -->
+  <!-- SKILLS & TECH MATRIX -->
   <section id="skills" class="section">
     <div class="container">
       <h2 class="section-title">Technical Expertise Matrix</h2>
@@ -201,7 +201,7 @@
     </div>
   </section>
 
-  <!-- HARDWARE RUNTIME MATRIX -->
+  <!-- HARDWARE PLATFORMS -->
   <section id="hardware" class="section bg-elevated">
     <div class="container">
       <h2 class="section-title">Hardware Acceleration &amp; Edge Platforms</h2>
@@ -231,17 +231,18 @@
     <div class="container">
       <div class="contact-box">
         <div>
-          <div class="card-num">COMMERCIAL ENGAGEMENT</div>
-          <h3>Connect with us for projects</h3>
+          <div class="card-num">COLLABORATION &amp; INQUIRY</div>
+          <h3>Connect for Research &amp; Projects</h3>
           <p class="text-muted">
-            Available for technical consultation, edge vision pipeline deployment, and low-latency neural network optimization.
+            Open for technical collaboration, edge vision pipeline deployment, and low-latency neural network optimization.
           </p>
           <div class="contact-details">
-            <p><strong>Inquiries:</strong> <a href="mailto:sparse.edge.ai@gmail.com" class="text-link">sparse.edge.ai@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:sparse.edge.ai@gmail.com" class="text-link">sparse.edge.ai@gmail.com</a></p>
           </div>
         </div>
         <div class="contact-links-panel">
-          <a href="mailto:sparse.edge.ai@gmail.com" class="btn-primary full-width">Initiate Project Inquiry &rarr;</a>
+          <a href="mailto:sparse.edge.ai@gmail.com" class="btn-primary full-width">Initiate Collaboration &rarr;</a>
+          <a href="https://github.com/sparseedgeai" target="_blank" class="btn-secondary full-width">GitHub Organization &rarr;</a>
         </div>
       </div>
     </div>
@@ -253,7 +254,7 @@
       <p>&copy; 2026 Sparse-Edge Dynamics. All rights reserved.</p>
       <p class="footer-links">
         <a href="mailto:sparse.edge.ai@gmail.com">Contact</a>
-        <a href="#about">About</a>
+        <a href="https://github.com/sparseedgeai" target="_blank">GitHub</a>
       </p>
     </div>
   </footer>
