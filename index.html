@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparse-Edge Dynamics // Embedded R&amp;D</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <img src="assets/logo.png" alt="Sparse-Edge Dynamics Logo" class="nav-logo">
+      <nav class="nav-links">
+        <a href="#about">The Lab</a>
+        <a href="#research">Publications</a>
+        <a href="#portfolio">Featured Systems</a>
+        <a href="#skills">Core Matrix</a>
+        <a href="#contact" class="btn-primary">Initiate Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">EMBEDDED SYSTEMS &bull; COMPUTER VISION &amp; MLOps &bull; Osaka, JP</div>
+      <h1>Accelerating Neural Inference on Constraint-Bound Edge Hardware.</h1>
+      <p class="hero-desc">
+        <strong>Sparse-Edge Dynamics</strong> is an applied research and embedded systems engineering laboratory. We architect, compress, and deploy high-throughput perception pipelines for edge GPUs, NPUs, and industrial microprocessors.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Connect for Projects</a>
+        <a href="#portfolio" class="btn-secondary">Explore System Registry</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDATION / ABOUT SECTION -->
+  <section id="about" class="section bg-elevated">
+    <div class="container">
+      <h2 class="section-title">The Foundation</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Rigorous Applied Research</h3>
+          <p class="text-muted">
+            Our optimization pipelines are grounded in formal empirical research. We design architectures that satisfy strict hardware latency, thermal, and memory budgets without sacrificing predictive accuracy, validated through peer-reviewed publications.
+          </p>
+        </div>
+        <div>
+          <h3>Deterministic Industrial Execution</h3>
+          <p class="text-muted">
+            From high-throughput computer vision to battery-aware edge robotics, our solutions bridge low-level firmware, closed-loop estimation, and high-performance C++/TensorRT inference engines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & PUBLICATIONS SECTION -->
+  <section id="research" class="section">
+    <div class="container">
+      <h2 class="section-title">Peer-Reviewed Research &amp; Publications</h2>
+      <div class="grid-2">
+
+        <!-- THESIS / HIGHPHYTOSPARSENET -->
+        <div class="card highlight-card">
+          <div class="card-num">COMPUTER VISION &bull; EDGE AI RESEARCH</div>
+          <h3>HighPhytoSparseNet: A Lightweight Multi-Head Object Detection Model for Edge-Based Agricultural Applications</h3>
+          <p class="author-tag">Sparse-Edge Dynamics Research Group &mdash; <em>Applied Vision Systems</em></p>
+          <p class="paper-desc">
+            A single-stage anchor-based detection framework engineered for extreme compute constraints. Integrates a MobileNetV3-Small backbone, bidirectional FPN+PANet neck, and three scale-specific heads with a domain-adapted loss formulation.
+          </p>
+          <div class="metrics-grid">
+            <div class="metric-item"><span class="metric-val">65.1%</span><span class="metric-lbl">mAP@0.5</span></div>
+            <div class="metric-item"><span class="metric-val">0.5</span><span class="metric-lbl">GFLOPs</span></div>
+            <div class="metric-item"><span class="metric-val">3.8M</span><span class="metric-lbl">Params</span></div>
+            <div class="metric-item"><span class="metric-val">42 FPS</span><span class="metric-lbl">Jetson Nano (5W)</span></div>
+          </div>
+          <div class="benchmark-note">
+            Compressed to <strong>3.8 MB via INT8 Post-Training Quantization</strong> with only 1.3% accuracy drop, reaching 85 FPS under 30% pruning.
+          </div>
+          <a href="papers/HighPhytoSparseNet_A_Lightweight_Multi-Head_Object_Detection_Model_for_Edge-Based_Agricultural_Applications.pdf" target="_blank" class="text-link">Access Publication (PDF) &rarr;</a>
+        </div>
+
+        <!-- ATAIT 2024 PAPER -->
+        <div class="card highlight-card">
+          <div class="card-num">ATAIT 2024 &bull; CEUR VOL-3748 &bull; EMBEDDED SYSTEMS</div>
+          <h3>Development of Battery Management System for Electric Vehicles</h3>
+          <p class="author-tag">Sparse-Edge Dynamics Research Group &mdash; <em>6th Int. Symposium on Advanced Technologies and Applications in IoT</em></p>
+          <p class="paper-desc">
+            An intelligent BMS architecture utilizing an adaptive Pulse Width Modulation (PWM) charging methodology. Eliminates residual current and thermal stress while actively governing multi-cell balancing.
+          </p>
+          <div class="metrics-grid">
+            <div class="metric-item"><span class="metric-val">0 &rarr; 0.45</span><span class="metric-lbl">PWM Duty</span></div>
+            <div class="metric-item"><span class="metric-val">98%</span><span class="metric-lbl">State of Charge</span></div>
+            <div class="metric-item"><span class="metric-val">48V / 10Ah</span><span class="metric-lbl">Pack Potential</span></div>
+            <div class="metric-item"><span class="metric-val">CAN Bus</span><span class="metric-lbl">Inter-Cell Comms</span></div>
+          </div>
+          <div class="benchmark-note">
+            Implemented via an ATmega2560 embedded microcontroller and MATLAB/Simulink closed-loop state verification.
+          </div>
+          <a href="papers/Development_Of_Battery_Management_System_For_Electric_Vehicles.pdf" target="_blank" class="text-link">Access Publication (PDF) &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED PROJECT REGISTRY -->
+  <section id="portfolio" class="section bg-elevated">
+    <div class="container">
+      <h2 class="section-title">Production Systems &amp; Technical Portfolio</h2>
+      <p class="section-intro">
+        Each system demonstrates full-cycle ML engineering: from data preprocessing and mathematical architecture design to training, quantization, and containerized deployment.
+      </p>
+
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">System</th>
+              <th style="width: 55%;">Architectural Specification &amp; Benchmarks</th>
+              <th style="width: 20%;">Deployment Target</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>HighPhytoSparseNet</strong></td>
+              <td>Lightweight CNN for botanical and stem detection (224&times;224&times;3 input, 1.2M params, 0.33 GFLOPs). Real-time edge inference at 15&ndash;20 ms.</td>
+              <td><span class="status-tag active">PyTorch / Jetson</span></td>
+            </tr>
+            <tr>
+              <td><strong>Manufacturing Defect Detection</strong></td>
+              <td>Real-time industrial surface defect detection utilizing YOLOv8 + TensorRT on NVIDIA Jetson. Achieves 90% accuracy with sub-50 ms deterministic execution.</td>
+              <td><span class="status-tag active">TensorRT / Jetson</span></td>
+            </tr>
+            <tr>
+              <td><strong>Multilingual Enterprise RAG Agent</strong></td>
+              <td>Document retrieval for English, Arabic, and German via RAG + FAISS + CLIP + HuggingFace Transformers + FastAPI. 85% accuracy with sub-3s response.</td>
+              <td><span class="status-tag active">FastAPI / FAISS</span></td>
+            </tr>
+            <tr>
+              <td><strong>YoloMine Damage Detection</strong></td>
+              <td>Custom single-stage detector built from scratch in PyTorch. Incorporates a DarkNet-style backbone, FPN feature neck, and multi-scale prediction heads.</td>
+              <td><span class="status-tag active">PyTorch / FPN</span></td>
+            </tr>
+            <tr>
+              <td><strong>Fraud Detection Classification Engine</strong></td>
+              <td>NLP text classification engine using CountVectorizer feature extraction paired with Multinomial Naive Bayes. 97% detection accuracy on phishing patterns.</td>
+              <td><span class="status-tag active">Scikit-Learn</span></td>
+            </tr>
+            <tr>
+              <td><strong>LLM Fine-Tuning Pipeline</strong></td>
+              <td>Parameter-Efficient Fine-Tuning (PEFT/LoRA) on foundational LLMs (BERT, LLaMA). Evaluated via BLEU &amp; F1; served via Streamlit &amp; FastAPI endpoints.</td>
+              <td><span class="status-tag pending">PEFT / FastAPI</span></td>
+            </tr>
+            <tr>
+              <td><strong>Cloud ML Pipeline Architecture</strong></td>
+              <td>End-to-end continuous training and deployment pipelines wrapped in Docker, orchestrated via Kubernetes, and exposed through asynchronous FastAPI microservices.</td>
+              <td><span class="status-tag pending">AWS / Docker</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & EXPERTISE MATRIX -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Expertise Matrix</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <p>Python, C++</p>
+        </div>
+        <div class="skill-group">
+          <h4>Deep Learning</h4>
+          <p>PyTorch, TensorFlow, Scikit-learn</p>
+        </div>
+        <div class="skill-group">
+          <h4>Computer Vision</h4>
+          <p>YOLOv5/v8, CLIP, OpenCV, TensorRT</p>
+        </div>
+        <div class="skill-group">
+          <h4>NLP &amp; LLMs</h4>
+          <p>Transformers, RAG, FAISS, Pinecone</p>
+        </div>
+        <div class="skill-group">
+          <h4>MLOps &amp; Infra</h4>
+          <p>FastAPI, Docker, Kubernetes, MLflow</p>
+        </div>
+        <div class="skill-group">
+          <h4>Edge Silicon</h4>
+          <p>NVIDIA Jetson, ARM Cortex, Embedded IPCs</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HARDWARE RUNTIME MATRIX -->
+  <section id="hardware" class="section bg-elevated">
+    <div class="container">
+      <h2 class="section-title">Hardware Acceleration &amp; Edge Platforms</h2>
+      <div class="grid-4">
+        <div class="hw-item">
+          <strong>NVIDIA Jetson Series</strong>
+          <span>Nano (5W), Xavier NX, Orin</span>
+        </div>
+        <div class="hw-item">
+          <strong>ARM Architectures</strong>
+          <span>Cortex-A, Linux Embedded IPCs</span>
+        </div>
+        <div class="hw-item">
+          <strong>Edge Accelerators</strong>
+          <span>Google Coral TPU, Intel NCS2</span>
+        </div>
+        <div class="hw-item">
+          <strong>Microcontrollers &amp; CAN</strong>
+          <span>ATmega2560, Isolated CAN Bus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & ENGAGEMENT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-box">
+        <div>
+          <div class="card-num">COMMERCIAL ENGAGEMENT</div>
+          <h3>Connect with us for projects</h3>
+          <p class="text-muted">
+            Available for technical consultation, edge vision pipeline deployment, and low-latency neural network optimization.
+          </p>
+          <div class="contact-details">
+            <p><strong>Inquiries:</strong> <a href="mailto:sparse.edge.ai@gmail.com" class="text-link">sparse.edge.ai@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-links-panel">
+          <a href="mailto:sparse.edge.ai@gmail.com" class="btn-primary full-width">Initiate Project Inquiry &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Sparse-Edge Dynamics. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="mailto:sparse.edge.ai@gmail.com">Contact</a>
+        <a href="#about">About</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
